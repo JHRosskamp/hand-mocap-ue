@@ -1,0 +1,25 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "Optitrack Hand Tracking Plugin",
+	"Description" : "Plugin for Communication with Labeling Pipeline",
+	"Category" : "InputDevices",
+	"CreatedBy" : "Janis Rosskamp",
+	"CreatedByURL" : "janisrosskamp.com",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EnabledByDefault" : false,
+	"CanContainContent" : true,
+	"IsBetaVersion" : false,
+	"Installed" : false,
+	"Modules" :
+	[
+		{
+			"Name" : "OptiTracking",
+			"Type" : "Developer",
+			"LoadingPhase" : "PreDefault"
+		}
+	]
+}
