@@ -48,4 +48,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 		void DoLabeling();
 
+	UPROPERTY(EditAnywhere)
+	FString filename;
+
+	UPROPERTY(EditAnywhere)
+	FString modelname;
 };

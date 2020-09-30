@@ -28,12 +28,14 @@ void ATrackingActor::Tick(float DeltaTime)
 void ATrackingActor::InitTracking() {
 	if (instance == nullptr)
 		instance = IOptiTracking::Get().GetTestClass();
-	auto status = instance->init();
+	auto name = TCHAR_TO_ANSI(*modelname);
+	auto status = instance->init(name);
 	UE_LOG(LogTemp, Warning, TEXT("Init status = %d"), status);
 }
 
 void ATrackingActor::ReadFile() {
-	instance->readFile();
+	auto file = TCHAR_TO_ANSI(*filename);
+	instance->readFile(file);
 	UE_LOG(LogTemp, Warning, TEXT("Files read!"));
 }
 
